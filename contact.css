@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+h1 {
+    background-color: rgb(255, 255, 255);
+    color: rgba(118, 138, 186, 0.506);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 2px 17px rgb(225, 222, 222);
+    
+}
+
+img {
+    margin-left: 40%;
+    margin-top: -10%;
+    filter: brightness(0.40);
+   
+
+}
+.sidebar{
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.562);
+    backdrop-filter: blur(7px);
+    border-right: 1px solid rgba(215, 215, 219, 0.735);
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.sidebar:hover{
+    width: 250px;
+}
+
+.sidebar-nav{
+    padding: 20px 0;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+    padding: 15px 15px;
+    margin: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+    padding-bottom: 50px;
+}
+.nav-item:hover {
+    background: rgba(187, 187, 198, 0.252);
+    transform: translateY(-15px);
+}
+
+.nav-item i {
+    color: rgba(87, 99, 156, 0.414);
+    font-size: 1.5em;
+    margin-right: 25px;
+    width: 25px;
+}
+
+.sidebar:hover .nav-item span {
+    opacity: 1;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: rgba(42, 42, 41, 0.225);
+    transform: scaleY(0);
+    transition: transform 0.3s;
+}
+
+.nav-item:hover::before {
+    transform: scaleY(1);
+}
+
+.logo {
+    color:rgb(162, 164, 193);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.7em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: rgba(168, 183, 234, 0.905);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.container-contact{
+    text-align: center;
+    padding-top: 50px;
+    color:rgba(49, 48, 130, 0.547);
+    font-family: Arial, sans-serif;
+    flex:1
+    
+   
+}
+
+footer{
+    background-color: rgb(207, 218, 248);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
