@@ -34,6 +34,10 @@ img {
     z-index: 1000;
 }
 
+.sidebar.expanded {
+    width: 250px;
+}
+
 .sidebar:hover{
     width: 250px;
 }
