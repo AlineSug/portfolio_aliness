@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="contact.css">
 
@@ -18,7 +18,7 @@
         </li>
         <li class="nav-item">
                 <i class="fa-solid fa-phone"></i>
-                <span><a href="a">Contact</a></span>
+                <span><a href="contact.html">Contact</a></span>
         </li>
         <li class="nav-item">
                                 <i class="fa-solid fa-car-side"></i>
@@ -41,9 +41,12 @@
     </footer>
 
     <script>
-        const sidebars = document.querySelectorAll('.sidebar');
+     
+     document.addEventListener('DOMContentLoaded', () => {
 
-sidebars.forEach(sidebar => {
+    const sidebars = document.querySelectorAll('.sidebar');
+    
+    sidebars.forEach(sidebar => {
     sidebar.addEventListener('click', (event) => {
         if (!event.target.closest('a')) {
             sidebar.classList.toggle('expanded');
@@ -51,11 +54,11 @@ sidebars.forEach(sidebar => {
         
     });
 
-
-const links = sidebar.querySelectorAll('a');
-links.forEach(link => {
-    link.addEventListener('click', (event) => {
-        console.log(`Clicked link: ${link.textContent} `);
+    const links = sidebar.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            console.log(`Clicked link: ${link.textContent} `);
+        });
     });
 });
 });
